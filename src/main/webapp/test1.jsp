@@ -12,6 +12,11 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello World from newjsp page!</h1>
+        <h1>This is the test1.jsp page!</h1>
+        <%
+            String name = request.getParameter("name");
+        %>
+        <p>Nice to meet you <%= name %></p>
+        <p><a href="">Back home</a></p>
     </body>
 </html>
